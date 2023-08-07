@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WealthWise - Investment Management</title>
+   <!-- Link Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+    body {
+      font-family: sans-serif;
+      background-image: url("investment.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo h1 {
+      margin: 0;
+    }
+    
+    .logo h1 span.we {
+      color: navy;
+      font-weight: bold; 
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu a {
+      margin-right: 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold; 
+      font-size: 18px; 
+    }
+    
+    .menu .login-button, .menu .signup-button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+    }
+    
+    .tsection {
+      margin-top: 10px;
+      padding: 25px;
+      text-align: center;
+      background-color: #CED1F4; 
+    }
+  
+    .main {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .sub {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: -50px;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .service {
+      border: 2px solid #FFDF8C;
+      padding: 30px;
+      margin: 20px;
+      text-align: center;
+      color: black; 
+      background-color: white; 
+      border-radius: 10px; 
+      height: 100%; 
+    }
+
+    .service img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .service h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: black; 
+      margin-top: 20px;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits li:before {
+      content: '\2022';
+      color: #FFDF8C;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+      margin-top: 30px;
+    }
+
+    .cta-button:hover {
+      background-color: #FFC107;
+    }
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <h1>
+            <span class="we">WealthWise</span>
+          </h1>
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <button class="login-button">Login</button>
+        </div>
+    </div>
+    
+    <div class="tsection">
+        <h1>Investment Management</h1>
+        <p>We offer a range of investment packages tailored to your risk appetite.</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service">
+            <h2>Low Risk Package</h2>
+            <div class="benefits">
+              <ul>
+                <li>Steady Returns</li>
+                <li>Capital Preservation</li>
+                <li>Low Volatility</li>
+              </ul>
+            </div>
+            <p>Invest in our low risk package for a secure and stable financial future.</p>
+            <p><strong>Price: $500/month</strong></p>
+            <a href="payment.html" class="cta-button">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service">
+            <h2>Medium Risk Package</h2>
+            <div class="benefits">
+              <ul>
+                <li>Balanced Growth</li>
+                <li>Moderate Volatility</li>
+                <li>Diversified Portfolio</li>
+              </ul>
+            </div>
+            <p>Opt for our medium risk package to achieve a balance of growth and stability.</p>
+            <p><strong>Price: $1000/month</strong></p>
+            <a href="payment.html" class="cta-button">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service">
+            <h2>High Risk Package</h2>
+            <div class="benefits">
+              <ul>
+                <li>High Growth Potential</li>
+                <li>Market Opportunities</li>
+                <li>Higher Volatility</li>
+              </ul>
+            </div>
+            <p>Experience higher growth potential with our high risk package for seasoned investors.</p>
+            <p><strong>Price: $2000/month</strong></p>
+            <a href="payment.html" class="cta-button">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

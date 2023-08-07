@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WealthWise - Our Services</title>
+   <style>
+    body {
+      font-family: sans-serif;
+      background-color: #CED1F4;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo h1 {
+      margin: 0;
+    }
+    
+    .logo h1 span.we {
+      color: navy;
+      font-weight: bold; 
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu a {
+      margin-right: 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold; 
+      font-size: 18px; 
+    }
+    
+    .menu .login-button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+    }
+
+    .tsection {
+      margin-top: 10px;
+      padding: 25px;
+      text-align: center; 
+      background-color: #CED1F4; 
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .service {
+      width: 30%;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .service h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .learn-more-button {
+      background-color: #FFDF8C;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <h1>
+            <span class="we">WealthWise</span>
+          </h1>
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <button class="login-button" onclick="loginSuccessful()">Login</button>
+        </div>
+    </div>
+    
+    <div class="tsection">
+        <h1>Our Services</h1>
+        <p>We offer a range of financial services tailored to your needs.</p>
+    </div>
+
+    <div class="services-container">
+      <div class="service">
+        <img src="YOUR_FIRST_PICTURE_URL" alt="Retirement Planning">
+        <h2>Retirement Planning</h2>
+        <p>Securing your future with personalized retirement plans designed to meet your lifestyle aspirations.</p>
+        <button class="learn-more-button btn btn-warning">Learn More</button>
+      </div>
+      <div class="service">
+        <img src="YOUR_SECOND_PICTURE_URL" alt="Investment Management">
+        <h2>Investment Management</h2>
+        <p>Maximizing your wealth potential with expert investment strategies tailored to your unique goals.</p>
+        <button class="learn-more-button btn btn-warning">Learn More</button>
+      </div>
+      <div class="service">
+        <img src="YOUR_THIRD_PICTURE_URL" alt="Financial Planning">
+        <h2>Financial Planning</h2>
+        <p>Charting a path to financial success through personalized strategies and comprehensive guidance.</p>
+        <button class="learn-more-button btn btn-warning">Learn More</button>
+      </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WealthWise - Financial Planning</title>
+   <!-- Link Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+    body {
+      font-family: sans-serif;
+      background-image: url("finance.jpg"); /* Replace 'your_background_image.jpg' with the path to your background image */
+      background-size: cover;
+      background-position: center;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo h1 {
+      margin: 0;
+    }
+    
+    .logo h1 span.we {
+      color: navy;
+      font-weight: bold; 
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for the menu */
+      padding: 10px;
+    }
+    
+    .menu a {
+      margin-right: 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold; 
+      font-size: 18px; 
+    }
+    
+    .menu .login-button, .menu .signup-button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+    }
+    
+    .tsection {
+      margin-top: 10px;
+      padding: 25px;
+      text-align: center;
+      background-color: #CED1F4; 
+    }
+  
+    .main {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .sub {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: -50px;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .service {
+      border: 2px solid #FFDF8C;
+      padding: 30px;
+      margin: 20px;
+      text-align: center;
+      color: black; /* Set text color to black */
+      background-color: white; /* Set background color to white */
+    }
+
+    .service img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .service h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: black; /* Set heading color to black */
+      margin-top: 20px;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits li:before {
+      content: '\2022';
+      color: #FFDF8C;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+      margin-top: 30px;
+      /* Additional styles to make it look like a button */
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .cta-button:hover {
+      background-color: #FFC107;
+    }
+
+    .process {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .process .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 250px;
+      margin: 10px;
+      /* Set background color to white */
+      background-color: white;
+    }
+
+    .process .step img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .process .step h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .process .step p {
+      font-size: 16px;
+      color: black;
+    }
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <h1>
+            <span class="we">WealthWise</span>
+          </h1>
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <button class="login-button">Login</button>
+        </div>
+    </div>
+    
+    <div class="tsection">
+        <h1>Financial Planning</h1>
+        <p>We offer personalized financial planning services to help you achieve your financial goals.</p>
+    </div>
+
+    <div class="container">
+      <div class="process">
+        <div class="step">
+          <img src="11.png" alt="Step 1">
+          <h3>Assess Your Finances</h3>
+          <p>Our expert advisors will thoroughly evaluate your current financial situation, including income, expenses, assets, and liabilities. This comprehensive assessment provides a clear understanding of your financial health and serves as the foundation.</p>
+        </div>
+        <div class="step">
+          <img src="2.png" alt="Step 2">
+          <h3>Create/Review the Financial Plan</h3>
+          <p>Our team of experts will develop a comprehensive and tailored plan that takes into account your financial goals, risk tolerance, and time horizon. By analyzing your assets, liabilities, income, and expenses, we ensure that your plan aligns with your unique circumstances.</p>
+        </div>
+        <div class="step">
+          <img src="3.png" alt="Step 3">
+          <h3>Implement Your Plan</h3>
+          <p>Our dedicated team will work closely with you to put your personalized plan into action. This includes assisting with investment allocation, setting up retirement accounts, establishing savings strategies, and addressing any other specific components of your plan.</p>
+        </div>
+      </div>
+
+      <!-- Button for call to action -->
+      <div style="text-align: center;">
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

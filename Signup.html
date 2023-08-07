@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body {
+      font-family: sans-serif;
+      background-color: #CED1F4;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo h1 {
+      margin: 0;
+    }
+    
+    .logo h1 span.we {
+      color: navy;
+      font-weight: bold; 
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu a {
+      margin-right: 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold; 
+      font-size: 18px; 
+    }
+    
+    .menu .login-button, .menu .signup-button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #FFDF8C;
+      color: black;
+    }
+    
+    .tsection {
+      margin-top: 10px;
+      padding: 25px;
+      text-align: left;
+      background-color: #CED1F4; 
+      height: 50%;
+      width: 100%;
+    }
+  
+    #esta {
+      vertical-align: top;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      background-color: #FFDF8C;
+      color: black;
+    }
+    
+    .main {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .sub {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: -50px;
+    }
+    
+    .form-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+      margin-top: 50px;
+    }
+    
+    .form-section .login-section, .form-section .signup-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; 
+    }
+    
+    .form-section input[type="text"],
+    .form-section input[type="password"],
+    .form-section input[type="email"],
+    .form-section input[type="tel"],
+    .form-section input[type="text"].otp-input {
+      padding: 10px;
+      margin-bottom: 15px; 
+      border-radius: 5px;
+      border: none;
+      width: 300px; 
+    }
+    
+    .form-section button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .form-section .login-button {
+      background-color: #FFDF8C;
+      color: black;
+    }
+    
+    .form-section .signup-button {
+      background-color: #FF5252;
+      color: white;
+      margin-top: 10px; 
+    }
+    
+    .otp-section {
+      display: flex;
+      align-items: center;
+    }
+    
+    .otp-input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 150px;
+      margin-right: 10px;
+    }
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <h1>
+            <span class="we">WealthWise</span>
+          </h1>
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <button class="login-button">Login</button>
+        </div>
+    </div>
+    
+    <div class="tsection">
+        <div class="main">
+         
+        </div>
+    </div>
+
+    <div class="form-section">
+      
+      <div class="signup-section">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Name" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <button class="signup-button">Get OTP</button>
+        <input type="text" class="otp-input" placeholder="Enter OTP" required>
+       
+      </div>
+    </div>
+</body>
+</html>
