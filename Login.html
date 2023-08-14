@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <style>
     body {
       font-family: sans-serif;
-      background-color: #CED1F4;
+      background-image: url("home.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
     .header {
       display: flex;
@@ -52,7 +56,6 @@
       margin-top: 10px;
       padding: 25px;
       text-align: left;
-      background-color: #CED1F4; 
       height: 50%;
       width: 100%;
     }
@@ -136,6 +139,11 @@
       color: #333;
     }
    </style>
+   <script>
+    function showSuccessfulLogin() {
+      alert("Successful Login");
+    }
+   </script>
 </head>
 <body>
     <div class="header">
@@ -145,11 +153,11 @@
           </h1>
         </div>
         <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-          <button class="login-button">Login</button>
+          <a href="index.html">Home</a>
+          <a href="About us.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html">Contact</a>
+          <a href="login.html" class="login-button">Login</a>
         </div>
     </div>
     
@@ -164,7 +172,7 @@
         <h2>Login</h2>
         <input type="text" placeholder="Name" required>
         <input type="password" placeholder="Password" required>
-        <button class="login-button">Login</button>
+        <button class="login-button" onclick="showSuccessfulLogin()">Login</button>
       </div>
 
       <button class="singpass-button">Login with Singpass</button>

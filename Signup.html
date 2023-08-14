@@ -4,13 +4,19 @@
    <style>
     body {
       font-family: sans-serif;
-      background-color: #CED1F4;
+      background-image: url("home.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: transparent; 
+      padding: 20px; 
     }
+
     .logo {
       display: flex;
       align-items: center;
@@ -52,7 +58,7 @@
       margin-top: 10px;
       padding: 25px;
       text-align: left;
-      background-color: #CED1F4; 
+      background-color: transparent; /* Change background-color to transparent */
       height: 50%;
       width: 100%;
     }
@@ -153,6 +159,11 @@
       cursor: pointer;
     }
    </style>
+   <script>
+    function showConfirmation() {
+      alert("A confirmation link has been sent to your email.");
+    }
+   </script>
 </head>
 <body>
     <div class="header">
@@ -166,7 +177,7 @@
           <a href="About us.html">About Us</a>
           <a href="Services.html">Services</a>
           <a href="Contact.html">Contact</a>
-          <button class="login-button">Login</button>
+          <a href="login.html" class="login-button">Login</a>
         </div>
     </div>
     
@@ -185,9 +196,8 @@
         <input type="password" placeholder="Confirm Password" required>
         <input type="email" placeholder="Email" required>
         <input type="tel" placeholder="Phone Number" required>
-        <button class="signup-button">Get OTP</button>
         <input type="text" class="otp-input" placeholder="Enter OTP" required>
-       
+        <button class="signup-button" onclick="showConfirmation()">Sign Up</button>
       </div>
 
       <div class="toggle-section">
