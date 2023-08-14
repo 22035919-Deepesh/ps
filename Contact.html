@@ -129,6 +129,11 @@
       background-color: #FFC107;
     }
    </style>
+   <script>
+    function showSubmitMessage() {
+      alert("Your message has been submitted successfully!");
+    }
+   </script>
 </head>
 <body>
     <div class="header">
@@ -138,10 +143,10 @@
           </h1>
         </div>
         <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="About us.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html">Contact</a>
           <button class="login-button">Login</button>
         </div>
     </div>
@@ -154,7 +159,7 @@
     <div class="container">
       <div class="contact-form">
         <h2>Get in Touch</h2>
-        <form action="#" method="post">
+        <form>
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -167,7 +172,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="submit-button">Submit</button>
+          <button type="button" class="submit-button" onclick="showSubmitMessage()">Submit</button>
         </form>
       </div>
     </div>

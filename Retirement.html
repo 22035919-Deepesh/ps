@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WealthWise - Retirement Planning</title>
-   <!-- Link Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    <style>
     body {
       font-family: sans-serif;
+      margin: 0;
+      padding: 0;
       background-image: url("retirement.jpg");
       background-size: cover;
       background-position: center;
@@ -18,35 +15,25 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
     }
 
     .logo h1 {
       margin: 0;
-    }
-    
-    .logo h1 span.we {
+      font-weight: bold;
+      font-size: 24px;
       color: navy;
-      font-weight: bold; 
     }
 
-    .menu {
-      display: flex;
-      align-items: center;
-    }
-    
     .menu a {
       margin-right: 20px;
       color: black;
       text-decoration: none;
-      font-weight: bold; 
-      font-size: 18px; 
+      font-weight: bold;
+      font-size: 18px;
     }
-    
+
     .menu .login-button, .menu .signup-button {
       padding: 10px 20px;
       border-radius: 5px;
@@ -57,24 +44,22 @@
       background-color: #FFDF8C;
       color: black;
     }
-    
+
     .tsection {
       margin-top: 10px;
       padding: 25px;
       text-align: center;
       background-color: #CED1F4; 
     }
-  
-    .main {
-      font-size: 24px;
-      color: white;
+
+    .tsection h1 {
+      font-size: 32px;
+      font-weight: bold;
       margin-bottom: 20px;
     }
-    
-    .sub {
-      font-weight: bold;
-      font-size: 20px;
-      margin-top: -50px;
+
+    .tsection p {
+      font-size: 18px;
     }
 
     .container {
@@ -87,7 +72,8 @@
       margin: 20px;
       text-align: center;
       color: black; 
-      border-radius: 10px;
+      background-color: white; 
+      border-radius: 10px; 
     }
 
     .service img {
@@ -152,7 +138,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="service">
-            <img src="retirement-image-1.jpg" alt="Retirement Image 1">
+            <img src="retire1.png" alt="Retirement Image 1" style="max-width: 100%; height: auto;">
             <h2>Comprehensive Retirement Strategies</h2>
             <p>Our expert advisors will create customized retirement strategies to align with your retirement goals and financial needs.</p>
             <button class="cta-button">Get Started</button>
@@ -160,7 +146,7 @@
         </div>
         <div class="col-md-4">
           <div class="service">
-            <img src="retirement-image-2.jpg" alt="Retirement Image 2">
+            <img src="retire2.png" alt="Retirement Image 2" style="max-width: 100%; height: auto;">
             <h2>Social Security Optimization</h2>
             <p>We will analyze your Social Security options and provide guidance on how to maximize your benefits for a comfortable retirement.</p>
             <button class="cta-button">Get Started</button>
@@ -168,7 +154,7 @@
         </div>
         <div class="col-md-4">
           <div class="service">
-            <img src="retirement-image-3.jpg" alt="Retirement Image 3">
+            <img src="retire3.png" alt="Retirement Image 3" style="max-width: 100%; height: auto;">
             <h2>Investment and Income Planning</h2>
             <p>Our team will help you develop a strategic investment and income plan to ensure your financial security during retirement.</p>
             <button class="cta-button">Get Started</button>
@@ -176,10 +162,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Link Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+

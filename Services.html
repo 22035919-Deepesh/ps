@@ -77,7 +77,7 @@
 
     .service img {
       width: 100%;
-      height: auto;
+      height: auto; 
       margin-bottom: 10px;
     }
 
@@ -100,6 +100,8 @@
       border: none;
       border-radius: 5px;
       padding: 10px 20px;
+      text-decoration: none; /* Remove default link styling */
+      display: inline-block;
     }
    </style>
 </head>
@@ -111,11 +113,11 @@
           </h1>
         </div>
         <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-          <button class="login-button" onclick="loginSuccessful()">Login</button>
+          <a href="index.html">Home</a>
+          <a href="About us.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html">Contact</a>
+          <button class="login-button">Login</button>
         </div>
     </div>
     
@@ -126,25 +128,23 @@
 
     <div class="services-container">
       <div class="service">
-        <img src="YOUR_FIRST_PICTURE_URL" alt="Retirement Planning">
+        <img class="service-img" src="retire.jpg" alt="Retirement Planning">
         <h2>Retirement Planning</h2>
         <p>Securing your future with personalized retirement plans designed to meet your lifestyle aspirations.</p>
-        <button class="learn-more-button btn btn-warning">Learn More</button>
+        <a href="Retirement.html" class="learn-more-button btn btn-warning">Learn More</a>
       </div>
       <div class="service">
-        <img src="YOUR_SECOND_PICTURE_URL" alt="Investment Management">
+        <img class="service-img" src="invest.jpg" alt="Investment Management">
         <h2>Investment Management</h2>
         <p>Maximizing your wealth potential with expert investment strategies tailored to your unique goals.</p>
-        <button class="learn-more-button btn btn-warning">Learn More</button>
+        <a href="Investment.html" class="learn-more-button btn btn-warning">Learn More</a>
       </div>
       <div class="service">
-        <img src="YOUR_THIRD_PICTURE_URL" alt="Financial Planning">
+        <img class="service-img" src="planning.jpg" alt="Financial Planning">
         <h2>Financial Planning</h2>
         <p>Charting a path to financial success through personalized strategies and comprehensive guidance.</p>
-        <button class="learn-more-button btn btn-warning">Learn More</button>
+        <a href="Finanancal planning.html" class="learn-more-button btn btn-warning">Learn More</a>
       </div>
     </div>
 </body>
 </html>
-
-

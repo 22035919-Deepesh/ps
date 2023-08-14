@@ -2,41 +2,36 @@
 <html lang="en">
 <head>
    <style>
-    body{
-      font-family: sans-serif;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #CED1F4;
     }
+
     .header {
+      background-color: white;
+      padding: 10px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
+
     .logo h1 {
       margin: 0;
-    }
-    
-    .logo h1 span.we {
+      font-weight: bold;
+      font-size: 24px;
       color: navy;
-      font-weight: bold; 
     }
 
-    .menu {
-      display: flex;
-      align-items: center;
-    }
-    
     .menu a {
       margin-right: 20px;
       color: black;
       text-decoration: none;
-      font-weight: bold; 
-      font-size: 18px; 
+      font-weight: bold;
+      font-size: 18px;
     }
-    
+
     .menu .login-button, .menu .signup-button {
       padding: 10px 20px;
       border-radius: 5px;
@@ -47,41 +42,38 @@
       background-color: #FFDF8C;
       color: black;
     }
-    
+
     .tsection {
-        margin-top: 10px;
-        padding: 25px;
-        text-align: left;
-        background-color: #CED1F4; 
+      text-align: center;
+      padding: 25px;
+      background-color: #CED1F4;
     }
-    
+
     .tsection h1 {
       font-size: 32px;
-      color: navy;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     .tsection p {
-      font-size: 20px;
-      color: black;
+      font-size: 18px;
     }
 
-    .form-section {
+    .graphic {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; 
-      margin-top: 50px;
+      margin-top: 10px;
     }
-    
-    .form-section img {
-      width: 300px;
-      height: auto;
-      margin-top: 20px;
+
+    .graphic-word {
+      font-size: 18px;
+      font-weight: bold;
+      color: navy;
+      margin: 0 20px;
     }
-    
-    .form-section .signup-button {
+
+    .graphic-button {
       padding: 10px 20px;
       border-radius: 5px;
       border: none;
@@ -90,22 +82,41 @@
       cursor: pointer;
       background-color: #FFDF8C;
       color: black;
+      margin-top: 10px;
+    }
+
+    .graphic-line {
+      width: 50px;
+      height: 2px;
+      background-color: navy;
+    }
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .form-section img {
+      width: 200px; /* Adjust the width here */
+      height: auto;
+      margin-top: 20px;
     }
    </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-          <h1>
-            <span class="we">WealthWise</span>
-          </h1>
+          <h1>WealthWise</h1>
         </div>
         <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-          <button class="login-button" onclick="loginSuccessful()">Login</button>
+          <a href="index.html">Home</a>
+          <a href="About us.html">About Us</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html">Contact</a>
+          <button class="login-button">Login</button>
         </div>
     </div>
     
@@ -116,12 +127,16 @@
     </div>
 
     <div class="form-section">
-      
-      <img src="YOUR_PICTURE_URL" alt="Your Picture">
-      <button class="signup-button" onclick="signupSuccessful()">Contact Us</button>
+      <img src="bars.png" alt="Your Picture">
+      <div class="graphic">
+        <button class="graphic-button">Trustworthy</button>
+        <div class="graphic-line"></div>
+        <button class="graphic-button">Expertise</button>
+        <div class="graphic-line"></div>
+        <button class="graphic-button">Empowerment</button>
+      </div>
+      <button class="graphic-button">Contact Us</button>
     </div>
-
-    <script src="login signup.js"></script>
-    
 </body>
 </html>
+
